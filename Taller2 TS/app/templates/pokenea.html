@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokenea - {{ pokenea.nombre }}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .pokenea-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pokenea-image {
+            max-width: 300px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .pokenea-quote {
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .container-info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        h1 {
+            color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <div class="pokenea-card">
+        <h1>{{ pokenea.nombre }}</h1>
+        <img src="{{ image_url }}" alt="{{ pokenea.nombre }}" class="pokenea-image">
+        <div class="pokenea-quote">
+            "{{ pokenea.frase }}"
+        </div>
+        <div class="container-info">
+            <p>Container ID: {{ container_id }}</p>
+        </div>
+    </div>
+</body>
+</html>

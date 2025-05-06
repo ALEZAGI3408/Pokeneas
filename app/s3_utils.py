@@ -7,15 +7,15 @@ from config import Config
 def get_s3_client():
     return boto3.client(
         's3',
-        aws_access_key_id=current_app.config[Config.S3_KEY],
-        aws_secret_access_key=current_app.config[Config.S3_SECRET]
+        aws_access_key_id=Config.S3_KEY,
+        aws_secret_access_key=Config.S3_SECRET
     )
 
 def get_image_url(image_name):
     """
     Genera la URL para acceder a una imagen en S3
     """
-    return f"{current_app.config[Config.S3_LOCATION]}{image_name}"
+    return f"{Config.S3_LOCATION}{image_name}"
 
 def upload_file_to_s3(file, bucket_name, acl="public-read"):
     """

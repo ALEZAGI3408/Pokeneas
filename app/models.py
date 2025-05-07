@@ -21,7 +21,7 @@ class Pokenea:
 
 # Lista de Pokeneas
 pokeneas = [
-    Pokenea(1, "ElRano", "0.15m", "Lenguetazo Asesino", "ElRano.png", "¡Ribbit!"),
+    Pokenea(1, "ElRano", "0.15m", "Lenguetazo Asesino", "Elrano.png", "¡Ribbit!"),
     Pokenea(2, "SanValentin", "1.65m", "Seducción paisa", "SanValentin.jpg", "San valen valen tin valen tin, ¡qué chimba!"),
     Pokenea(3, "ElJuicioso", "1.80m", "Juicio Final", "ElJuicioso.jpg", "Hoy quedamos 3-0 con la ayuda de Dios."),
     Pokenea(4, "Daironman", "1.60m", "Resistencia al licor", "Daironman.jpg", "Un guaro no se le niega a nadie, ni en las buenas ni en las malas."),

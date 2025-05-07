@@ -19,7 +19,7 @@ class Pokenea:
             'container_id': socket.gethostname()
         }
 
-# Lista de Pokeneas
+# Lista de Pokeneas - Asegúrate de que los nombres de archivo coincidan exactamente con los de S3
 pokeneas = [
     Pokenea(1, "ElRano", "0.15m", "Lenguetazo Asesino", "Elrano.png", "¡Ribbit!"),
     Pokenea(2, "SanValentin", "1.65m", "Seducción paisa", "SanValentin.jpg", "San valen valen tin valen tin, ¡qué chimba!"),

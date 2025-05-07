@@ -46,12 +46,13 @@
 <body>
     <div class="pokenea-card">
         <h1>{{ pokenea.nombre }}</h1>
-        <img src="{{ image_url }}" alt="{{ pokenea.nombre }}" class="pokenea-image">
+        <img src="{{ image_url }}" alt="{{ pokenea.nombre }}" class="pokenea-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+encontrada'; console.log('Error al cargar imagen: {{ image_url }}');">
         <div class="pokenea-quote">
             "{{ pokenea.frase }}"
         </div>
         <div class="container-info">
             <p>Container ID: {{ container_id }}</p>
+            <p style="font-size: 0.8em; color: #888;">URL de imagen: {{ image_url }}</p>
         </div>
     </div>
 </body>
